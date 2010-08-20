@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE0145DC121BB14B001F9C41 /* MRReflectionTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE0145CA121BA1C3001F9C41 /* MRReflectionTest.cpp */; };
+		DE014640121BBD67001F9C41 /* MagicReflection_DefineMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = DE01463F121BBD67001F9C41 /* MagicReflection_DefineMethod.h */; };
+		DE014698121CE207001F9C41 /* MRConstructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE014696121CE207001F9C41 /* MRConstructor.cpp */; };
+		DE2EA57B12153504003C68C5 /* MRRuntimeSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE2EA57912153504003C68C5 /* MRRuntimeSystem.cpp */; };
+		DE2EA58C12153994003C68C5 /* MRMethodInvocationContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE2EA58A12153994003C68C5 /* MRMethodInvocationContext.cpp */; };
+		DE2EA58D12153994003C68C5 /* MRRuntimeConstructionContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE2EA58B12153994003C68C5 /* MRRuntimeConstructionContext.cpp */; };
+		DE845506121E711C00A44823 /* libMagicReflectionLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF87D8C12151951009EC71D /* libMagicReflectionLib.a */; };
+		DE84550E121E736000A44823 /* MRRuntimeSystemImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE84550D121E736000A44823 /* MRRuntimeSystemImpl.h */; };
+		DE84556C121E819900A44823 /* MRConstructorInvoker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE84556A121E819900A44823 /* MRConstructorInvoker.cpp */; };
+		DE84556D121E819900A44823 /* MRMethodInvoker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE84556B121E819900A44823 /* MRMethodInvoker.cpp */; };
+		DE8455D2121E8B6100A44823 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455AF121E8B6100A44823 /* config.h */; };
+		DE8455D3121E8B6100A44823 /* MRNullType.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B0121E8B6100A44823 /* MRNullType.h */; };
+		DE8455D4121E8B6100A44823 /* MRSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B1121E8B6100A44823 /* MRSequence.h */; };
+		DE8455D5121E8B6100A44823 /* MRTypelist.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B2121E8B6100A44823 /* MRTypelist.h */; };
+		DE8455D6121E8B6100A44823 /* MRTypelistMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B3121E8B6100A44823 /* MRTypelistMacros.h */; };
+		DE8455D7121E8B6100A44823 /* MRTypeManip.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B4121E8B6100A44823 /* MRTypeManip.h */; };
+		DE8455D8121E8B6100A44823 /* MRTypeTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B5121E8B6100A44823 /* MRTypeTraits.h */; };
+		DE8455D9121E8B6100A44823 /* MRAbstractInvocationContext_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B6121E8B6100A44823 /* MRAbstractInvocationContext_inl.h */; };
+		DE8455DA121E8B6100A44823 /* MRAbstractInvocationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B7121E8B6100A44823 /* MRAbstractInvocationContext.h */; };
+		DE8455DB121E8B6100A44823 /* MRConstructorInvoker.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B8121E8B6100A44823 /* MRConstructorInvoker.h */; };
+		DE8455DC121E8B6100A44823 /* MRConstructorInvokerImpl_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455B9121E8B6100A44823 /* MRConstructorInvokerImpl_inl.h */; };
+		DE8455DD121E8B6100A44823 /* MRConstructorInvokerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455BA121E8B6100A44823 /* MRConstructorInvokerImpl.h */; };
+		DE8455DE121E8B6100A44823 /* MRDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455BB121E8B6100A44823 /* MRDefines.h */; };
+		DE8455DF121E8B6100A44823 /* MRDynamicPtr_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455BC121E8B6100A44823 /* MRDynamicPtr_inl.h */; };
+		DE8455E0121E8B6100A44823 /* MRLooseType.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455BD121E8B6100A44823 /* MRLooseType.h */; };
+		DE8455E1121E8B6100A44823 /* MRMethodInvocationContext_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455BE121E8B6100A44823 /* MRMethodInvocationContext_inl.h */; };
+		DE8455E2121E8B6100A44823 /* MRMethodInvoker.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455BF121E8B6100A44823 /* MRMethodInvoker.h */; };
+		DE8455E3121E8B6100A44823 /* MRMethodInvokerImpl_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C0121E8B6100A44823 /* MRMethodInvokerImpl_inl.h */; };
+		DE8455E4121E8B6100A44823 /* MRMethodInvokerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C1121E8B6100A44823 /* MRMethodInvokerImpl.h */; };
+		DE8455E5121E8B6100A44823 /* MRMethodTypeConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C2121E8B6100A44823 /* MRMethodTypeConstructor.h */; };
+		DE8455E6121E8B6100A44823 /* MRMightyType.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C3121E8B6100A44823 /* MRMightyType.h */; };
+		DE8455E7121E8B6100A44823 /* MRPrimitiveSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C4121E8B6100A44823 /* MRPrimitiveSupport.h */; };
+		DE8455E8121E8B6100A44823 /* MRRuntimeClassImpl_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C5121E8B6100A44823 /* MRRuntimeClassImpl_inl.h */; };
+		DE8455E9121E8B6100A44823 /* MRRuntimeClassImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C6121E8B6100A44823 /* MRRuntimeClassImpl.h */; };
+		DE8455EA121E8B6100A44823 /* MRRuntimeConstructionContext_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C7121E8B6100A44823 /* MRRuntimeConstructionContext_inl.h */; };
+		DE8455EB121E8B6100A44823 /* MRStaticAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C8121E8B6100A44823 /* MRStaticAssert.h */; };
+		DE8455EC121E8B6100A44823 /* MRConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455C9121E8B6100A44823 /* MRConstructor.h */; };
+		DE8455ED121E8B6100A44823 /* MRDynamicCast.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455CA121E8B6100A44823 /* MRDynamicCast.h */; };
+		DE8455EE121E8B6100A44823 /* MRDynamicPtr.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455CB121E8B6100A44823 /* MRDynamicPtr.h */; };
+		DE8455EF121E8B6100A44823 /* MRMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455CC121E8B6100A44823 /* MRMethod.h */; };
+		DE8455F0121E8B6100A44823 /* MRMethodInvocationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455CD121E8B6100A44823 /* MRMethodInvocationContext.h */; };
+		DE8455F1121E8B6100A44823 /* MRRuntimeClass.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455CE121E8B6100A44823 /* MRRuntimeClass.h */; };
+		DE8455F2121E8B6100A44823 /* MRRuntimeConstructionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455CF121E8B6100A44823 /* MRRuntimeConstructionContext.h */; };
+		DE8455F3121E8B6100A44823 /* MRRuntimeSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455D0121E8B6100A44823 /* MRRuntimeSystem.h */; };
+		DE8455F4121E8B6100A44823 /* MRTypeID.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8455D1121E8B6100A44823 /* MRTypeID.h */; };
+		DEF87D991215199A009EC71D /* MRRuntimeClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF87D921215199A009EC71D /* MRRuntimeClass.cpp */; };
+		DEF87D9D1215199A009EC71D /* MRMethod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEF87D961215199A009EC71D /* MRMethod.cpp */; };
+		DEF87DAD121519AE009EC71D /* MagicReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF87DA7121519AE009EC71D /* MagicReflection.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE0145DE121BB165001F9C41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 508817C409F0C9740071BF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF87D8B12151951009EC71D;
+			remoteInfo = MagicReflectionLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE0145CA121BA1C3001F9C41 /* MRReflectionTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRReflectionTest.cpp; path = ../sample/MRReflectionTest.cpp; sourceTree = SOURCE_ROOT; };
+		DE0145D8121BB134001F9C41 /* sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sample; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE01463F121BBD67001F9C41 /* MagicReflection_DefineMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagicReflection_DefineMethod.h; path = ../include/MagicReflection_DefineMethod.h; sourceTree = SOURCE_ROOT; };
+		DE014696121CE207001F9C41 /* MRConstructor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRConstructor.cpp; path = ../src/MRConstructor.cpp; sourceTree = SOURCE_ROOT; };
+		DE2EA57912153504003C68C5 /* MRRuntimeSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRRuntimeSystem.cpp; path = ../src/MRRuntimeSystem.cpp; sourceTree = SOURCE_ROOT; };
+		DE2EA58A12153994003C68C5 /* MRMethodInvocationContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRMethodInvocationContext.cpp; path = ../src/MRMethodInvocationContext.cpp; sourceTree = SOURCE_ROOT; };
+		DE2EA58B12153994003C68C5 /* MRRuntimeConstructionContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRRuntimeConstructionContext.cpp; path = ../src/MRRuntimeConstructionContext.cpp; sourceTree = SOURCE_ROOT; };
+		DE84550D121E736000A44823 /* MRRuntimeSystemImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRRuntimeSystemImpl.h; path = ../src/MRRuntimeSystemImpl.h; sourceTree = SOURCE_ROOT; };
+		DE84556A121E819900A44823 /* MRConstructorInvoker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRConstructorInvoker.cpp; path = ../src/MRConstructorInvoker.cpp; sourceTree = SOURCE_ROOT; };
+		DE84556B121E819900A44823 /* MRMethodInvoker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRMethodInvoker.cpp; path = ../src/MRMethodInvoker.cpp; sourceTree = SOURCE_ROOT; };
+		DE8455AF121E8B6100A44823 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../include/MagicReflection/config.h; sourceTree = SOURCE_ROOT; };
+		DE8455B0121E8B6100A44823 /* MRNullType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRNullType.h; path = ../include/MagicReflection/detail/loki/MRNullType.h; sourceTree = SOURCE_ROOT; };
+		DE8455B1121E8B6100A44823 /* MRSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRSequence.h; path = ../include/MagicReflection/detail/loki/MRSequence.h; sourceTree = SOURCE_ROOT; };
+		DE8455B2121E8B6100A44823 /* MRTypelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRTypelist.h; path = ../include/MagicReflection/detail/loki/MRTypelist.h; sourceTree = SOURCE_ROOT; };
+		DE8455B3121E8B6100A44823 /* MRTypelistMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRTypelistMacros.h; path = ../include/MagicReflection/detail/loki/MRTypelistMacros.h; sourceTree = SOURCE_ROOT; };
+		DE8455B4121E8B6100A44823 /* MRTypeManip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRTypeManip.h; path = ../include/MagicReflection/detail/loki/MRTypeManip.h; sourceTree = SOURCE_ROOT; };
+		DE8455B5121E8B6100A44823 /* MRTypeTraits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRTypeTraits.h; path = ../include/MagicReflection/detail/loki/MRTypeTraits.h; sourceTree = SOURCE_ROOT; };
+		DE8455B6121E8B6100A44823 /* MRAbstractInvocationContext_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRAbstractInvocationContext_inl.h; path = ../include/MagicReflection/detail/MRAbstractInvocationContext_inl.h; sourceTree = SOURCE_ROOT; };
+		DE8455B7121E8B6100A44823 /* MRAbstractInvocationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRAbstractInvocationContext.h; path = ../include/MagicReflection/detail/MRAbstractInvocationContext.h; sourceTree = SOURCE_ROOT; };
+		DE8455B8121E8B6100A44823 /* MRConstructorInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRConstructorInvoker.h; path = ../include/MagicReflection/detail/MRConstructorInvoker.h; sourceTree = SOURCE_ROOT; };
+		DE8455B9121E8B6100A44823 /* MRConstructorInvokerImpl_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRConstructorInvokerImpl_inl.h; path = ../include/MagicReflection/detail/MRConstructorInvokerImpl_inl.h; sourceTree = SOURCE_ROOT; };
+		DE8455BA121E8B6100A44823 /* MRConstructorInvokerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRConstructorInvokerImpl.h; path = ../include/MagicReflection/detail/MRConstructorInvokerImpl.h; sourceTree = SOURCE_ROOT; };
+		DE8455BB121E8B6100A44823 /* MRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRDefines.h; path = ../include/MagicReflection/detail/MRDefines.h; sourceTree = SOURCE_ROOT; };
+		DE8455BC121E8B6100A44823 /* MRDynamicPtr_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRDynamicPtr_inl.h; path = ../include/MagicReflection/detail/MRDynamicPtr_inl.h; sourceTree = SOURCE_ROOT; };
+		DE8455BD121E8B6100A44823 /* MRLooseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRLooseType.h; path = ../include/MagicReflection/detail/MRLooseType.h; sourceTree = SOURCE_ROOT; };
+		DE8455BE121E8B6100A44823 /* MRMethodInvocationContext_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMethodInvocationContext_inl.h; path = ../include/MagicReflection/detail/MRMethodInvocationContext_inl.h; sourceTree = SOURCE_ROOT; };
+		DE8455BF121E8B6100A44823 /* MRMethodInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMethodInvoker.h; path = ../include/MagicReflection/detail/MRMethodInvoker.h; sourceTree = SOURCE_ROOT; };
+		DE8455C0121E8B6100A44823 /* MRMethodInvokerImpl_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMethodInvokerImpl_inl.h; path = ../include/MagicReflection/detail/MRMethodInvokerImpl_inl.h; sourceTree = SOURCE_ROOT; };
+		DE8455C1121E8B6100A44823 /* MRMethodInvokerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMethodInvokerImpl.h; path = ../include/MagicReflection/detail/MRMethodInvokerImpl.h; sourceTree = SOURCE_ROOT; };
+		DE8455C2121E8B6100A44823 /* MRMethodTypeConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMethodTypeConstructor.h; path = ../include/MagicReflection/detail/MRMethodTypeConstructor.h; sourceTree = SOURCE_ROOT; };
+		DE8455C3121E8B6100A44823 /* MRMightyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMightyType.h; path = ../include/MagicReflection/detail/MRMightyType.h; sourceTree = SOURCE_ROOT; };
+		DE8455C4121E8B6100A44823 /* MRPrimitiveSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRPrimitiveSupport.h; path = ../include/MagicReflection/detail/MRPrimitiveSupport.h; sourceTree = SOURCE_ROOT; };
+		DE8455C5121E8B6100A44823 /* MRRuntimeClassImpl_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRRuntimeClassImpl_inl.h; path = ../include/MagicReflection/detail/MRRuntimeClassImpl_inl.h; sourceTree = SOURCE_ROOT; };
+		DE8455C6121E8B6100A44823 /* MRRuntimeClassImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRRuntimeClassImpl.h; path = ../include/MagicReflection/detail/MRRuntimeClassImpl.h; sourceTree = SOURCE_ROOT; };
+		DE8455C7121E8B6100A44823 /* MRRuntimeConstructionContext_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRRuntimeConstructionContext_inl.h; path = ../include/MagicReflection/detail/MRRuntimeConstructionContext_inl.h; sourceTree = SOURCE_ROOT; };
+		DE8455C8121E8B6100A44823 /* MRStaticAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRStaticAssert.h; path = ../include/MagicReflection/detail/MRStaticAssert.h; sourceTree = SOURCE_ROOT; };
+		DE8455C9121E8B6100A44823 /* MRConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRConstructor.h; path = ../include/MagicReflection/MRConstructor.h; sourceTree = SOURCE_ROOT; };
+		DE8455CA121E8B6100A44823 /* MRDynamicCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRDynamicCast.h; path = ../include/MagicReflection/MRDynamicCast.h; sourceTree = SOURCE_ROOT; };
+		DE8455CB121E8B6100A44823 /* MRDynamicPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRDynamicPtr.h; path = ../include/MagicReflection/MRDynamicPtr.h; sourceTree = SOURCE_ROOT; };
+		DE8455CC121E8B6100A44823 /* MRMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMethod.h; path = ../include/MagicReflection/MRMethod.h; sourceTree = SOURCE_ROOT; };
+		DE8455CD121E8B6100A44823 /* MRMethodInvocationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRMethodInvocationContext.h; path = ../include/MagicReflection/MRMethodInvocationContext.h; sourceTree = SOURCE_ROOT; };
+		DE8455CE121E8B6100A44823 /* MRRuntimeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRRuntimeClass.h; path = ../include/MagicReflection/MRRuntimeClass.h; sourceTree = SOURCE_ROOT; };
+		DE8455CF121E8B6100A44823 /* MRRuntimeConstructionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRRuntimeConstructionContext.h; path = ../include/MagicReflection/MRRuntimeConstructionContext.h; sourceTree = SOURCE_ROOT; };
+		DE8455D0121E8B6100A44823 /* MRRuntimeSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRRuntimeSystem.h; path = ../include/MagicReflection/MRRuntimeSystem.h; sourceTree = SOURCE_ROOT; };
+		DE8455D1121E8B6100A44823 /* MRTypeID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRTypeID.h; path = ../include/MagicReflection/MRTypeID.h; sourceTree = SOURCE_ROOT; };
+		DEF87D8C12151951009EC71D /* libMagicReflectionLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicReflectionLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF87D921215199A009EC71D /* MRRuntimeClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRRuntimeClass.cpp; path = ../src/MRRuntimeClass.cpp; sourceTree = SOURCE_ROOT; };
+		DEF87D961215199A009EC71D /* MRMethod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MRMethod.cpp; path = ../src/MRMethod.cpp; sourceTree = SOURCE_ROOT; };
+		DEF87DA7121519AE009EC71D /* MagicReflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagicReflection.h; path = ../include/MagicReflection.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE0145D6121BB134001F9C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE845506121E711C00A44823 /* libMagicReflectionLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF87D8A12151951009EC71D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		508817C209F0C9740071BF1A = {
+			isa = PBXGroup;
+			children = (
+				DE0145BE121BA189001F9C41 /* Sample */,
+				508817F509F0CAB50071BF1A /* Sources */,
+				DEF87D5A121518FF009EC71D /* Include */,
+				5088180609F0CDD00071BF1A /* External Frameworks and Libraries */,
+				508817D509F0C9AD0071BF1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		508817D509F0C9AD0071BF1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEF87D8C12151951009EC71D /* libMagicReflectionLib.a */,
+				DE0145D8121BB134001F9C41 /* sample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		508817F509F0CAB50071BF1A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DEF87D921215199A009EC71D /* MRRuntimeClass.cpp */,
+				DEF87D961215199A009EC71D /* MRMethod.cpp */,
+				DE2EA57912153504003C68C5 /* MRRuntimeSystem.cpp */,
+				DE2EA58A12153994003C68C5 /* MRMethodInvocationContext.cpp */,
+				DE2EA58B12153994003C68C5 /* MRRuntimeConstructionContext.cpp */,
+				DE014696121CE207001F9C41 /* MRConstructor.cpp */,
+				DE84556A121E819900A44823 /* MRConstructorInvoker.cpp */,
+				DE84556B121E819900A44823 /* MRMethodInvoker.cpp */,
+				DE84550D121E736000A44823 /* MRRuntimeSystemImpl.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		5088180609F0CDD00071BF1A /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		DE0145BE121BA189001F9C41 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				DE0145CA121BA1C3001F9C41 /* MRReflectionTest.cpp */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		DE0146D2121D0751001F9C41 /* loki */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455B0121E8B6100A44823 /* MRNullType.h */,
+				DE8455B1121E8B6100A44823 /* MRSequence.h */,
+				DE8455B2121E8B6100A44823 /* MRTypelist.h */,
+				DE8455B3121E8B6100A44823 /* MRTypelistMacros.h */,
+				DE8455B4121E8B6100A44823 /* MRTypeManip.h */,
+				DE8455B5121E8B6100A44823 /* MRTypeTraits.h */,
+			);
+			name = loki;
+			sourceTree = "<group>";
+		};
+		DE0146F5121D446F001F9C41 /* public headers */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455AF121E8B6100A44823 /* config.h */,
+				DEF87DA7121519AE009EC71D /* MagicReflection.h */,
+				DE01463F121BBD67001F9C41 /* MagicReflection_DefineMethod.h */,
+			);
+			name = "public headers";
+			sourceTree = "<group>";
+		};
+		DE0146F6121D4481001F9C41 /* dynamic cast */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455CA121E8B6100A44823 /* MRDynamicCast.h */,
+			);
+			name = "dynamic cast";
+			sourceTree = "<group>";
+		};
+		DE0146F7121D4486001F9C41 /* typeid */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455D1121E8B6100A44823 /* MRTypeID.h */,
+			);
+			name = typeid;
+			sourceTree = "<group>";
+		};
+		DE0146F8121D448C001F9C41 /* runtime class */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455C5121E8B6100A44823 /* MRRuntimeClassImpl_inl.h */,
+				DE8455C6121E8B6100A44823 /* MRRuntimeClassImpl.h */,
+				DE8455CE121E8B6100A44823 /* MRRuntimeClass.h */,
+			);
+			name = "runtime class";
+			sourceTree = "<group>";
+		};
+		DE0146F9121D4492001F9C41 /* method */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455CC121E8B6100A44823 /* MRMethod.h */,
+				DE8455BF121E8B6100A44823 /* MRMethodInvoker.h */,
+				DE8455C0121E8B6100A44823 /* MRMethodInvokerImpl_inl.h */,
+				DE8455C1121E8B6100A44823 /* MRMethodInvokerImpl.h */,
+				DE8455C2121E8B6100A44823 /* MRMethodTypeConstructor.h */,
+			);
+			name = method;
+			sourceTree = "<group>";
+		};
+		DE0146FA121D4496001F9C41 /* constructor */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455B8121E8B6100A44823 /* MRConstructorInvoker.h */,
+				DE8455BA121E8B6100A44823 /* MRConstructorInvokerImpl.h */,
+				DE8455B9121E8B6100A44823 /* MRConstructorInvokerImpl_inl.h */,
+				DE8455C9121E8B6100A44823 /* MRConstructor.h */,
+			);
+			name = constructor;
+			sourceTree = "<group>";
+		};
+		DE0146FB121D44A3001F9C41 /* dynamic ptr */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455CB121E8B6100A44823 /* MRDynamicPtr.h */,
+				DE8455BC121E8B6100A44823 /* MRDynamicPtr_inl.h */,
+			);
+			name = "dynamic ptr";
+			sourceTree = "<group>";
+		};
+		DE0146FC121D44BE001F9C41 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455D0121E8B6100A44823 /* MRRuntimeSystem.h */,
+			);
+			name = system;
+			sourceTree = "<group>";
+		};
+		DE014817121D9D7C001F9C41 /* invocation context */ = {
+			isa = PBXGroup;
+			children = (
+				DE8455B7121E8B6100A44823 /* MRAbstractInvocationContext.h */,
+				DE8455B6121E8B6100A44823 /* MRAbstractInvocationContext_inl.h */,
+				DE8455CD121E8B6100A44823 /* MRMethodInvocationContext.h */,
+				DE8455BE121E8B6100A44823 /* MRMethodInvocationContext_inl.h */,
+				DE8455CF121E8B6100A44823 /* MRRuntimeConstructionContext.h */,
+				DE8455C7121E8B6100A44823 /* MRRuntimeConstructionContext_inl.h */,
+			);
+			name = "invocation context";
+			sourceTree = "<group>";
+		};
+		DEF87D5A121518FF009EC71D /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				DE0146F5121D446F001F9C41 /* public headers */,
+				DE014817121D9D7C001F9C41 /* invocation context */,
+				DE0146FC121D44BE001F9C41 /* system */,
+				DE0146FB121D44A3001F9C41 /* dynamic ptr */,
+				DE0146F6121D4481001F9C41 /* dynamic cast */,
+				DE0146FA121D4496001F9C41 /* constructor */,
+				DE0146F9121D4492001F9C41 /* method */,
+				DE0146F8121D448C001F9C41 /* runtime class */,
+				DE0146F7121D4486001F9C41 /* typeid */,
+				DEF87DB3121519B6009EC71D /* detail */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		DEF87DB3121519B6009EC71D /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				DE0146D2121D0751001F9C41 /* loki */,
+				DE8455BB121E8B6100A44823 /* MRDefines.h */,
+				DE8455BD121E8B6100A44823 /* MRLooseType.h */,
+				DE8455C3121E8B6100A44823 /* MRMightyType.h */,
+				DE8455C4121E8B6100A44823 /* MRPrimitiveSupport.h */,
+				DE8455C8121E8B6100A44823 /* MRStaticAssert.h */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DEF87D8812151951009EC71D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF87DAD121519AE009EC71D /* MagicReflection.h in Headers */,
+				DE014640121BBD67001F9C41 /* MagicReflection_DefineMethod.h in Headers */,
+				DE84550E121E736000A44823 /* MRRuntimeSystemImpl.h in Headers */,
+				DE8455D2121E8B6100A44823 /* config.h in Headers */,
+				DE8455D3121E8B6100A44823 /* MRNullType.h in Headers */,
+				DE8455D4121E8B6100A44823 /* MRSequence.h in Headers */,
+				DE8455D5121E8B6100A44823 /* MRTypelist.h in Headers */,
+				DE8455D6121E8B6100A44823 /* MRTypelistMacros.h in Headers */,
+				DE8455D7121E8B6100A44823 /* MRTypeManip.h in Headers */,
+				DE8455D8121E8B6100A44823 /* MRTypeTraits.h in Headers */,
+				DE8455D9121E8B6100A44823 /* MRAbstractInvocationContext_inl.h in Headers */,
+				DE8455DA121E8B6100A44823 /* MRAbstractInvocationContext.h in Headers */,
+				DE8455DB121E8B6100A44823 /* MRConstructorInvoker.h in Headers */,
+				DE8455DC121E8B6100A44823 /* MRConstructorInvokerImpl_inl.h in Headers */,
+				DE8455DD121E8B6100A44823 /* MRConstructorInvokerImpl.h in Headers */,
+				DE8455DE121E8B6100A44823 /* MRDefines.h in Headers */,
+				DE8455DF121E8B6100A44823 /* MRDynamicPtr_inl.h in Headers */,
+				DE8455E0121E8B6100A44823 /* MRLooseType.h in Headers */,
+				DE8455E1121E8B6100A44823 /* MRMethodInvocationContext_inl.h in Headers */,
+				DE8455E2121E8B6100A44823 /* MRMethodInvoker.h in Headers */,
+				DE8455E3121E8B6100A44823 /* MRMethodInvokerImpl_inl.h in Headers */,
+				DE8455E4121E8B6100A44823 /* MRMethodInvokerImpl.h in Headers */,
+				DE8455E5121E8B6100A44823 /* MRMethodTypeConstructor.h in Headers */,
+				DE8455E6121E8B6100A44823 /* MRMightyType.h in Headers */,
+				DE8455E7121E8B6100A44823 /* MRPrimitiveSupport.h in Headers */,
+				DE8455E8121E8B6100A44823 /* MRRuntimeClassImpl_inl.h in Headers */,
+				DE8455E9121E8B6100A44823 /* MRRuntimeClassImpl.h in Headers */,
+				DE8455EA121E8B6100A44823 /* MRRuntimeConstructionContext_inl.h in Headers */,
+				DE8455EB121E8B6100A44823 /* MRStaticAssert.h in Headers */,
+				DE8455EC121E8B6100A44823 /* MRConstructor.h in Headers */,
+				DE8455ED121E8B6100A44823 /* MRDynamicCast.h in Headers */,
+				DE8455EE121E8B6100A44823 /* MRDynamicPtr.h in Headers */,
+				DE8455EF121E8B6100A44823 /* MRMethod.h in Headers */,
+				DE8455F0121E8B6100A44823 /* MRMethodInvocationContext.h in Headers */,
+				DE8455F1121E8B6100A44823 /* MRRuntimeClass.h in Headers */,
+				DE8455F2121E8B6100A44823 /* MRRuntimeConstructionContext.h in Headers */,
+				DE8455F3121E8B6100A44823 /* MRRuntimeSystem.h in Headers */,
+				DE8455F4121E8B6100A44823 /* MRTypeID.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DE0145D7121BB134001F9C41 /* sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE0145E6121BB18E001F9C41 /* Build configuration list for PBXNativeTarget "sample" */;
+			buildPhases = (
+				DE0145D5121BB134001F9C41 /* Sources */,
+				DE0145D6121BB134001F9C41 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE0145DF121BB165001F9C41 /* PBXTargetDependency */,
+			);
+			name = sample;
+			productName = sample;
+			productReference = DE0145D8121BB134001F9C41 /* sample */;
+			productType = "com.apple.product-type.tool";
+		};
+		DEF87D8B12151951009EC71D /* MagicReflectionLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEF87D8F12151961009EC71D /* Build configuration list for PBXNativeTarget "MagicReflectionLib" */;
+			buildPhases = (
+				DEF87D8812151951009EC71D /* Headers */,
+				DEF87D8912151951009EC71D /* Sources */,
+				DEF87D8A12151951009EC71D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicReflectionLib;
+			productName = MagicReflectionLib;
+			productReference = DEF87D8C12151951009EC71D /* libMagicReflectionLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		508817C409F0C9740071BF1A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 508817C509F0C9740071BF1A /* Build configuration list for PBXProject "MagicReflection" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 0;
+			mainGroup = 508817C209F0C9740071BF1A;
+			productRefGroup = 508817D509F0C9AD0071BF1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEF87D8B12151951009EC71D /* MagicReflectionLib */,
+				DE0145D7121BB134001F9C41 /* sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE0145D5121BB134001F9C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE0145DC121BB14B001F9C41 /* MRReflectionTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF87D8912151951009EC71D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF87D991215199A009EC71D /* MRRuntimeClass.cpp in Sources */,
+				DEF87D9D1215199A009EC71D /* MRMethod.cpp in Sources */,
+				DE2EA57B12153504003C68C5 /* MRRuntimeSystem.cpp in Sources */,
+				DE2EA58C12153994003C68C5 /* MRMethodInvocationContext.cpp in Sources */,
+				DE2EA58D12153994003C68C5 /* MRRuntimeConstructionContext.cpp in Sources */,
+				DE014698121CE207001F9C41 /* MRConstructor.cpp in Sources */,
+				DE84556C121E819900A44823 /* MRConstructorInvoker.cpp in Sources */,
+				DE84556D121E819900A44823 /* MRMethodInvoker.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE0145DF121BB165001F9C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEF87D8B12151951009EC71D /* MagicReflectionLib */;
+			targetProxy = DE0145DE121BB165001F9C41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		508817C609F0C9740071BF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "../src ../include";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../build/macosx;
+			};
+			name = Debug;
+		};
+		508817C709F0C9740071BF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "../src ../include";
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				SYMROOT = ../build/macosx;
+			};
+			name = Release;
+		};
+		DE0145DA121BB134001F9C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = sample;
+			};
+			name = Debug;
+		};
+		DE0145DB121BB134001F9C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = sample;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		DEF87D8D12151952009EC71D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "../src ../include";
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = MagicReflectionLib;
+			};
+			name = Debug;
+		};
+		DEF87D8E12151952009EC71D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "../src ../include";
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = MagicReflectionLib;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		508817C509F0C9740071BF1A /* Build configuration list for PBXProject "MagicReflection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508817C609F0C9740071BF1A /* Debug */,
+				508817C709F0C9740071BF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE0145E6121BB18E001F9C41 /* Build configuration list for PBXNativeTarget "sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE0145DA121BB134001F9C41 /* Debug */,
+				DE0145DB121BB134001F9C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEF87D8F12151961009EC71D /* Build configuration list for PBXNativeTarget "MagicReflectionLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF87D8D12151952009EC71D /* Debug */,
+				DEF87D8E12151952009EC71D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 508817C409F0C9740071BF1A /* Project object */;
+}
