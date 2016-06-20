@@ -411,9 +411,15 @@
 /* Begin PBXProject section */
 		508817C409F0C9740071BF1A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 508817C509F0C9740071BF1A /* Build configuration list for PBXProject "MagicReflection" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 508817C209F0C9740071BF1A;
 			productRefGroup = 508817D509F0C9AD0071BF1A /* Products */;
 			projectDirPath = "";
@@ -471,7 +477,7 @@
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "../src ../include";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				SYMROOT = ../build/macosx;
 			};
 			name = Debug;
@@ -485,7 +491,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "../src ../include";
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				SYMROOT = ../build/macosx;
 			};
 			name = Release;
@@ -535,6 +541,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
 				PRODUCT_NAME = MagicReflectionLib;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -552,6 +559,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				PREBINDING = NO;
 				PRODUCT_NAME = MagicReflectionLib;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
