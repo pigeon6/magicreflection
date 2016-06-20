@@ -120,14 +120,14 @@ class MRMightyType {
             
             mr_pointer_uint* pDst = (mr_pointer_uint*)&pObj->m_object[0];
             mr_pointer_uint* pSrc = (mr_pointer_uint*)&val;
-            mr_pointer_uint* pEnd = ((mr_byte*)pSrc) + (sizeof(T) - (sizeof(T) % sizeof(mr_pointer_uint)));
+            mr_pointer_uint* pEnd = (mr_pointer_uint*)(((mr_byte*)pSrc) + (sizeof(T) - (sizeof(T) % sizeof(mr_pointer_uint))));
             while (pEnd>pSrc) {
                 *pDst++ = *pSrc++;
             }
             
             if (0 !=(sizeof(T) % sizeof(mr_pointer_uint)) ) {
-                mr_byte* pDst1 = pDst;
-                mr_byte* pSrc1 = pSrc;
+                mr_byte* pDst1 = reinterpret_cast<mr_byte*>(pDst);
+                mr_byte* pSrc1 = reinterpret_cast<mr_byte*>(pSrc);
                 
                 switch (sizeof(T) % sizeof(mr_pointer_uint)) {
                     case 7: *pDst1++ = *pSrc1++;
@@ -161,7 +161,7 @@ class MRMightyType {
         }
 #define __MR_PRIMSELECT_VARIANT_2(type, storage) \
         template <int n> struct _PrimSelect<n, type> {  \
-        static type* Get(const MRMightyType *pObj) {   return &pObj->storage; };\
+        static type* Get(const MRMightyType *pObj) {   return const_cast<type*>(&pObj->storage); };\
         }
         
         __MR_PRIMSELECT_VARIANT(bool,     m_out_b,      m_int!=0);
