@@ -13,6 +13,10 @@ magicreflection provides following features.
 - parameter reduction (i.e. float->int) when calling
 - method overload
 
+# REFERENCE
+Presentation slice (2009, Japanese)
+- http://www.slideshare.net/pigeon6/nadec-magicreflection-20101009
+
 # LICENSE
 Copyright (c) 2016 Hiroki Omae
 
