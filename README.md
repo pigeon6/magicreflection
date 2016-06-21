@@ -14,7 +14,7 @@ magicreflection provides following features.
 - method overload
 
 # REFERENCE
-Presentation slice (2009, Japanese)
+Presentation slice (2010, Japanese)
 - http://www.slideshare.net/pigeon6/nadec-magicreflection-20101009
 
 # LICENSE
